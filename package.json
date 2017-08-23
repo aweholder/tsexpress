@@ -1,0 +1,25 @@
+{
+  "name": "fwb",
+  "version": "1.0.0",
+  "description": "I want to custom express framework",
+  "main": "./bin/www.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "4.0.36",
+    "express": "4.15.4",
+    "intravenous": "0.1.4-beta",
+    "nunjucks": "3.0.1",
+    "tslint": "5.6.0",
+    "typescript": "2.4.2"
+  },
+  "devDependencies": {
+    "@types/es6-shim": "0.31.34",
+    "@types/nunjucks": "0.0.33",
+    "@types/wrench": "0.0.28",
+    "wrench": "1.5.9"
+  }
+}
