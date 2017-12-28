@@ -86,7 +86,7 @@ export class ControllerResolver {
                             }
                         }
                         middlewares.push(primaryAction);
-                        if (methodDecorated.middleware && methodDecorated.middleware.before) {
+                        if (methodDecorated.middleware && methodDecorated.middleware.after) {
                             middlewares.push(...methodDecorated.middleware.after);
                         }
                         const args = [f.path, middlewares];

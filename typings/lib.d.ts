@@ -2,7 +2,7 @@
 
 declare module "intravenous" {
     export interface IRegisterFn {
-        (name: string, object: Function | Object, lifecycle?: string): void;
+        (name: string, object: Function | Object, lifecycle?: "perRequest" | "unique" | "singleton"): void;
     }
 
     export interface IGetFn {

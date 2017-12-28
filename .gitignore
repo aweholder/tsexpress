@@ -5,3 +5,4 @@ node_modules
 bin/*.js
 app/*.js
 controllers/*.js
+.DS_Store

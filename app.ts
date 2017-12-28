@@ -6,6 +6,7 @@ import * as intravenous from "intravenous";
 import * as nunjucks from "nunjucks";
 
 import { ControllerResolver } from "./app/web/router";
+import { Dependency } from "./app/di/configuration";
 
 export class Application {
     public app: express.Express;
@@ -27,6 +28,7 @@ export class Application {
             this.server = http.createServer(this.app);
             this.configureView();
             const container = intravenous.create();
+            Dependency(container);
             this.resolveController(container);
             this.server.listen(port, () => {
                 console.log(`Server is runing on ${port}!`);
